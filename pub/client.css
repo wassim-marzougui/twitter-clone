@@ -1,0 +1,142 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f5f5;
+  color: #111;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+nav h1 { font-size: 1.2rem; }
+
+#nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Boutons */
+button {
+  padding: 0.4rem 1rem;
+  border: 1px solid #111;
+  border-radius: 20px;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button:hover { opacity: 0.85; }
+
+button.btn-outline {
+  background: transparent;
+  color: #111;
+}
+
+/* Cards messages */
+article {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.card-header strong { font-size: 0.95rem; }
+
+.card-header time {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+article p { line-height: 1.5; }
+
+.empty {
+  text-align: center;
+  color: #888;
+  margin-top: 2rem;
+}
+
+/* Modales */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.modal h2 { font-size: 1.1rem; }
+
+.modal input {
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.modal input:focus {
+  outline: none;
+  border-color: #111;
+}
+
+.modal-msg {
+  font-size: 0.85rem;
+  color: #c0392b;
+  min-height: 1rem;
+}
+
+.btn-row {
+  display: flex;
+  gap: 8px;
+}
+
+/* Toasts */
+.toast {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  z-index: 20;
+}
+
+.toast-success { background: #2ecc71; color: #fff; }
+.toast-error   { background: #e74c3c; color: #fff; }
