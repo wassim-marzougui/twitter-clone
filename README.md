@@ -156,7 +156,7 @@ développement). Toutes les communications sont chiffrées. Le port HTTP
 ### Installation
 
 ```bash
-git clone https://github.com/TON_USERNAME/twitter-clone.git
+git clone https://github.com/wassim-marzougui/twitter-clone.git
 cd twitter-clone
 npm install
 ```
@@ -199,9 +199,10 @@ npm start
 
 ## Démo en ligne
 
-URL : `https://twitter-clone-xxxx.onrender.com`
+URL : `https://twitter-clone-pmrx.onrender.com`
 
-> Note : le plan gratuit Render met le serveur en veille après 15 minutes  
+> Note : le plan gratuit Render met le serveur en veille après 15 minutes
+>  
 > d'inactivité. La première requête peut prendre 30 à 60 secondes.
 
 ---
@@ -233,3 +234,4 @@ temporaire révocable côté serveur.
 Master 1 — Sécurité des Systèmes d'Information : Secrets
 Université Paris Saclay  
 Année universitaire 2025-2026
+email : "Wassim Marzougui" <wassim.marzougui@ens.uvsq.fr>
